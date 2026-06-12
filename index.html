@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevNest</title>
+  <meta name="description" content="Personal Software Hub">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="./icon.png">
+</head>
+<body>
+  <!-- Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo" onclick="location.reload();" style="cursor: pointer;">
+        <span class="logo-brackets">&lt; &gt;</span>
+        <span class="logo-text">DevNest</span>
+      </div>
+      <nav>
+        <a href="#software">Software</a>
+        <a href="#custom-links">Links</a>
+        <a href="#chrome-flags">Flags</a>
+        <a href="#registry">Registry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Personal <span class="highlight">Software Hub</span></h1>
+        <p>A centralized space for essential apps, system configurations, and developer tools.</p>
+      </div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="section">
+      <div class="section-header">
+        <i class="ph-fill ph-app-window"></i>
+        <h2>Essential Software</h2>
+      </div>
+      <div class="grid software-grid">
+        <!-- Software Cards will be injected by JS or hardcoded here -->
+        <!-- Antigravity -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-rocket-launch"></i></div>
+          <div class="card-info">
+            <h3>Antigravity</h3>
+            <p>AI Coding Assistant</p>
+          </div>
+          <a href="https://antigravity.google/download" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Official Download</a>
+        </div>
+        <!-- Canva -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/canva.svg" alt="Canva" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Canva</h3>
+            <p>Design Tool</p>
+          </div>
+          <a href="https://www.canva.com/download/windows/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Python -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Python</h3>
+            <p>Programming Language</p>
+          </div>
+          <a href="https://www.python.org/downloads/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Chrome Beta -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlechrome.svg" alt="Chrome Beta" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Chrome Beta</h3>
+            <p>Web Browser</p>
+          </div>
+          <a href="https://www.google.com/chrome/beta/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Chrome -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlechrome.svg" alt="Chrome" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Chrome</h3>
+            <p>Web Browser</p>
+          </div>
+          <a href="https://www.google.com/chrome/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Windhawk -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-wrench"></i></div>
+          <div class="card-info">
+            <h3>Windhawk</h3>
+            <p>Windows Customization</p>
+          </div>
+          <a href="https://windhawk.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Drive Desktop -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledrive.svg" alt="Drive Desktop" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Drive Desktop</h3>
+            <p>Cloud Storage</p>
+          </div>
+          <a href="https://www.google.com/drive/download/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- WhatsApp -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>WhatsApp</h3>
+            <p>Messaging</p>
+          </div>
+          <a href="https://www.whatsapp.com/download" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- FX Sound -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-speaker-hifi"></i></div>
+          <div class="card-info">
+            <h3>FX Sound</h3>
+            <p>Audio Enhancer</p>
+          </div>
+          <a href="https://www.fxsound.com/download" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Cloudflare WARP -->
+        <div class="card software-card">
+          <div class="card-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cloudflare.svg" alt="Cloudflare WARP" class="svg-icon" style="filter: invert(1)"/></div>
+          <div class="card-info">
+            <h3>Cloudflare WARP</h3>
+            <p>VPN / DNS</p>
+          </div>
+          <a href="https://1.1.1.1/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Custom Context Menu -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-list"></i></div>
+          <div class="card-info">
+            <h3>Custom Context Menu</h3>
+            <p>System Utility</p>
+          </div>
+          <a href="https://github.com/moudey/CustomContextMenu" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Free Download Manager (FDM) -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-download"></i></div>
+          <div class="card-info">
+            <h3>Free Download Manager</h3>
+            <p>Download Manager</p>
+          </div>
+          <a href="https://www.freedownloadmanager.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Screenbox -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-video-camera"></i></div>
+          <div class="card-info">
+            <h3>Screenbox</h3>
+            <p>Media Player</p>
+          </div>
+          <a href="https://github.com/huynhsontung/Screenbox" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- LocalSend -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-paper-plane-right"></i></div>
+          <div class="card-info">
+            <h3>LocalSend</h3>
+            <p>File Transfer</p>
+          </div>
+          <a href="https://localsend.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- ESET Antivirus -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-shield-check"></i></div>
+          <div class="card-info">
+            <h3>ESET Antivirus</h3>
+            <p>Security Software</p>
+          </div>
+          <a href="https://www.eset.com/us/download/home/?intsrc=usdownload" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- WinHance -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-lightning"></i></div>
+          <div class="card-info">
+            <h3>WinHance</h3>
+            <p>Debloat Tool</p>
+          </div>
+          <a href="https://winhance.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Wintoys -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-gear"></i></div>
+          <div class="card-info">
+            <h3>Wintoys</h3>
+            <p>Windows Optimization</p>
+          </div>
+          <a href="https://apps.microsoft.com/detail/9p8ltpgcbzxd?hl=en-GB&gl=BD" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <!-- Microsoft PowerToys -->
+        <div class="card software-card">
+          <div class="card-icon"><i class="ph-fill ph-toolbox"></i></div>
+          <div class="card-info">
+            <h3>Microsoft PowerToys</h3>
+            <p>System Utilities</p>
+          </div>
+          <a href="https://apps.microsoft.com/detail/xp89dcgq3k6vld?hl=en-GB&gl=BD" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom External Links Section -->
+    <section id="custom-links" class="section">
+      <div class="section-header">
+        <i class="ph-fill ph-link"></i>
+        <h2>Custom External Links</h2>
+      </div>
+      <div class="grid links-grid">
+        <div class="card link-card">
+          <div class="card-icon"><i class="ph-fill ph-windows-logo"></i></div>
+          <div class="card-info">
+            <h3>Microsoft</h3>
+            <p class="url-text">https://massgrave.dev/</p>
+          </div>
+          <a href="https://massgrave.dev/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <div class="card link-card">
+          <div class="card-icon"><i class="ph-fill ph-laptop"></i></div>
+          <div class="card-info">
+            <h3>Galaxy Book Enabler</h3>
+            <p class="url-text">https://github.com/Bananz0/GalaxyBookEnabler</p>
+          </div>
+          <a href="https://github.com/Bananz0/GalaxyBookEnabler" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <div class="card link-card">
+          <div class="card-icon"><i class="ph-fill ph-shield-check"></i></div>
+          <div class="card-info">
+            <h3>ESET Antivirus Bot</h3>
+            <p class="url-text">https://eset.imi73x.com/</p>
+          </div>
+          <a href="https://eset.imi73x.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <div class="card link-card">
+          <div class="card-icon"><i class="ph-fill ph-youtube-logo"></i></div>
+          <div class="card-info">
+            <h3>Youwee</h3>
+            <p class="url-text">https://github.com/vanloctech/youwee</p>
+          </div>
+          <a href="https://github.com/vanloctech/youwee" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+        <div class="card link-card">
+          <div class="card-icon"><i class="ph-fill ph-paint-brush"></i></div>
+          <div class="card-info">
+            <h3>Adobe GenP</h3>
+            <p class="url-text">https://gen.paramore.su/</p>
+          </div>
+          <a href="https://gen.paramore.su/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Link</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chrome Flags Section -->
+    <section id="chrome-flags" class="section">
+      <div class="section-header">
+        <i class="ph-fill ph-flag"></i>
+        <h2>Chrome Flags</h2>
+      </div>
+      <div class="grid flags-grid">
+        <!-- Flags injected/hardcoded here -->
+        <div class="card list-card">
+          <span class="flag-name">Smooth Scrolling</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Smooth Scrolling"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Touch UI Layout</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Touch UI Layout"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Tab Scrolling</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Tab Scrolling"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Parallel Downloading</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Parallel Downloading"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Extensions Menu Access Control</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Extensions Menu Access Control"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Tab Audio Muting UI Control</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Tab Audio Muting UI Control"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Overlay Scrollbars</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Overlay Scrollbars"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Flash Overlay Scrollbars When Mouse Enter</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Flash Overlay Scrollbars When Mouse Enter"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Flash Overlay Scrollbars Once When Visible</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Flash Overlay Scrollbars Once When Visible"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Experimental Web Platform Features</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Experimental Web Platform Features"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Vertical Tabs</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Vertical Tabs"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+        <div class="card list-card">
+          <span class="flag-name">Elastic Overscroll</span>
+          <button class="btn btn-secondary copy-btn" data-copy="Elastic Overscroll"><i class="ph ph-copy"></i> Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registry Settings Section -->
+    <section id="registry" class="section">
+      <div class="section-header">
+        <i class="ph-fill ph-hard-drives"></i>
+        <h2>Registry Settings</h2>
+      </div>
+      <div class="card registry-card">
+        <div class="registry-info">
+          <h3>OEM Information</h3>
+          <p class="registry-path">Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation</p>
+        </div>
+        <button class="btn btn-secondary copy-btn" data-copy="Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation"><i class="ph ph-copy"></i> Copy</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 DevNest. Designed for performance and elegance.</p>
+      <p>Crafted with ♥ by Taufiq Joy</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
